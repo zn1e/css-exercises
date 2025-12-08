@@ -12,6 +12,19 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex; /* correct */
+  align-items: center; /* nope; should've implemented a chaining selector ; but this works prolly*/
+  justify-content: space-between; /* correct */
+  padding: 8px; /* correct */
+}
+
+.left-container {
+  display: flex;
+}
+
+.right-container {
+  display: flex;
+  gap: 16px;
 }
 
 .profile-image {
@@ -45,4 +58,6 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex; /* correct */
+  gap: 16px; /* correct */
 }
